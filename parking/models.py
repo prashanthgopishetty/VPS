@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class ParkingSlot(models.Model):
+    slot = models.PositiveIntegerField()
+    car_no = models.CharField(max_length=10)
